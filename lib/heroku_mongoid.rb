@@ -1,3 +1,3 @@
-module HerokuMongoid
-  # Your code goes here...
-end
+require 'heroku_mongoid/env'
+
+HerokuMongoid::Env.break
