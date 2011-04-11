@@ -2,7 +2,7 @@ require 'test_helper'
 
 describe HerokuMongoid do
   it "sets the ENV variables required on Heroku" do
-    ENV['MONGOHQ'] = 'mongodb://heroku:93hk3fco1t063sftxv8z1a@flame.mongohq.com:27029/app111111'
+    ENV['MONGOHQ_URL'] = 'mongodb://heroku:93hk3fco1t063sftxv8z1a@flame.mongohq.com:27029/app111111'
 
     HerokuMongoid::Env.break
 

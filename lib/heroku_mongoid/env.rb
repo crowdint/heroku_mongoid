@@ -3,7 +3,7 @@ module HerokuMongoid
     REGEXP = /^mongodb:\/\/(\w+):(\w+)@([\w\.]+):(\d+)\/(\w+)$/
 
     def self.break
-      REGEXP.match(ENV['MONGOHQ'])
+      REGEXP.match(ENV['MONGOHQ_URL'])
 
       ENV['MONGOID_HOST']     = $3
       ENV['MONGOID_PORT']     = $4
